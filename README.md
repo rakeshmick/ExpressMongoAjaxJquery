@@ -15,3 +15,11 @@ data in my userData collection :
 }
 
 to start project use npm start
+
+created express project using npx express-generator
+
+added a route in the routes folder to manager the data call 
+
+can get data using 
+
+http://localhost:30000/data
