@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script >
+        $(document).ready(function(){
+            $("button").click(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/dataasdad",
+                    success: function(result) {
+                        alert(JSON.stringify(result));
+                    },
+                    error: function(result) {
+                        alert('error');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>Hello world
+    <button id="button" value="val_1" name="button">button</button>
+</body>
+</html>
